@@ -1,0 +1,33 @@
+{
+    "doctype": "DocType",
+    "module": "Gym Management",
+    "name": "Gym Membership Type",
+    "owner": "Administrator",
+    "fields": [
+        {
+            "fieldname": "membership_type",
+            "label": "Membership Type",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "fieldname": "duration",
+            "label": "Duration (months)",
+            "fieldtype": "Int",
+            "reqd": 1
+        },
+        {
+            "fieldname": "price",
+            "label": "Price",
+            "fieldtype": "Currency",
+            "reqd": 1
+        },
+        {
+            "fieldname": "item",
+            "label": "Item",
+            "fieldtype": "Link",
+            "options": "Item",
+            "read_only": 1
+        }
+    ]
+}
